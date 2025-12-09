@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno x uno – Integrantes de Babasónicos</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Babasónicos</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- LA BANDA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="banda.html" id="navbarBanda" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            La banda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarBanda">
+                            <li><a class="dropdown-item" href="banda.html">Presentación</a></li>
+                            <li><a class="dropdown-item" href="historia.html">Historia en los 90</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INTEGRANTES -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page"
+                           href="integrantes.html" id="navbarIntegrantes"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Integrantes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarIntegrantes">
+                            <li><a class="dropdown-item" href="integrantes.html">Integrantes actuales</a></li>
+                            <li><a class="dropdown-item" href="detalle-integrantes.html">Uno x uno</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- DISCOGRAFIA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="discografia.html" id="navbarDiscografia"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Discografía
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="discografia.html">Visión general</a></li>
+                            <li><a class="dropdown-item" href="disco-jessico.html">Jessico</a></li>
+                            <li><a class="dropdown-item" href="disco-infame.html">Infame</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ESTETICA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="estetica.html" role="button"
+                           data-bs-toggle="dropdown">
+                            Estética & moda
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="estetica.html">Concepto estético</a></li>
+                            <li><a class="dropdown-item" href="moda.html">Moda en el escenario</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- VIVO -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="vivo.html" role="button"
+                           data-bs-toggle="dropdown">
+                            En vivo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="vivo.html">Shows destacados</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- JUEGO -->
+                    <li class="nav-item"><a class="nav-link" href="juego.html">Juego</a></li>
+
+                    <!-- COMPLEMENTARIAS -->
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="alumna.html">Sobre la alumna</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main class="container my-5">
+        <header class="mb-5 text-center">
+            <h1 class="mb-3">Uno x uno</h1>
+            <p class="lead">
+                Un recorrido por los roles y las historias de cada integrante de Babasónicos.
+            </p>
+        </header>
+
+        <div class="row">
+            <!-- ÍNDICE LATERAL -->
+            <aside class="col-lg-3 mb-4">
+                <div class="list-group sticky-lg-top">
+                    <a href="#dargelos" class="list-group-item list-group-item-action">Adrián Dárgelos</a>
+                    <a href="#uma-t" class="list-group-item list-group-item-action">Diego “Uma-T” Tuñón</a>
+                    <a href="#uma" class="list-group-item list-group-item-action">Diego “Uma” Rodríguez</a>
+                    <a href="#panza" class="list-group-item list-group-item-action">Diego “Panza” Castellano</a>
+                    <a href="#roger" class="list-group-item list-group-item-action">Mariano “Roger” Domínguez</a>
+                    <a href="#tuta" class="list-group-item list-group-item-action">Gustavo “Tuta” Torres</a>
+                </div>
+            </aside>
+
+            <!-- FICHAS -->
+            <section class="col-lg-9">
+
+                <!-- DÁRGELOS -->
+                <article id="dargelos" class="mb-5 pb-4 border-bottom">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-4">
+                            <img src="../img/ellos/ellos-dargelos.jpg" alt="Adrián Dárgelos"
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="h3">Adrián “Dárgelos” Rodríguez</h2>
+                            <p>
+                                Vocalista y cara más visible de Babasónicos, suele describirse como una especie
+                                de “inteligencia babasónica”: condensa en pocas líneas el universo del grupo. 
+                                No solo escribe y canta, también piensa los conceptos generales que atraviesan 
+                                cada disco: climas, personajes, tonos y miradas sobre la época.
+                            </p>
+                            <p>
+                                Fuera de la banda también publicó poemas y colaboró en canciones con otros
+                                artistas de distintas escenas. Su forma de cantar mezcla teatralidad,
+                                susurros, frases cortadas y un uso muy particular del español, lleno de
+                                dobles sentidos y giros inesperados.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UMA-T -->
+                <article id="uma-t" class="mb-5 pb-4 border-bottom">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-4 order-md-2">
+                            <img src="../img/ellos/ellos-uma-t.jpg" alt="Diego Uma-T Tuñón"
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-8 order-md-1">
+                            <h2 class="h3">Diego “Uma-T” Tuñón</h2>
+                            <p>
+                                Tecladista y encargado de muchas de las texturas electrónicas del grupo,
+                                Uma-T se acercó desde muy chico al mundo de la música y la producción.
+                                Su trabajo se nota tanto en los arreglos de estudio como en el diseño
+                                sonoro de los shows en vivo.
+                            </p>
+                            <p>
+                                Además de Babasónicos trabajó como productor para otros proyectos, lo que
+                                le dio una mirada bastante amplia sobre la música pop, el rock y la
+                                electrónica. Es una de las personas que más se preocupa por la búsqueda
+                                de nuevos sonidos y tecnologías dentro de la banda.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UMA -->
+                <article id="uma" class="mb-5 pb-4 border-bottom">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-4">
+                            <img src="../img/ellos/ellos-uma.jpg" alt="Diego Uma Rodríguez"
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="h3">Diego “Uma” Rodríguez</h2>
+                            <p>
+                                Hermano menor de Dárgelos, creció rodeado de música, skate y bicicletas.
+                                Empezó a tocar instrumentos desde chico y en Babasónicos ocupó lugares
+                                muy variados: batería, percusión, guitarras, saxos y otros timbres que
+                                van cambiando según el disco y la etapa.
+                            </p>
+                            <p>
+                                También produjo material para otras bandas y se movió mucho en la escena
+                                independiente. Su perfil inquieto y multiinstrumentista le da al grupo
+                                una energía muy particular, entre lo lúdico y lo experimental.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PANZA -->
+                <article id="panza" class="mb-5 pb-4 border-bottom">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-4 order-md-2">
+                            <img src="../img/ellos/ellos-panza.jpg" alt="Diego Panza Castellano"
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-8 order-md-1">
+                            <h2 class="h3">Diego “Panza” Castellano</h2>
+                            <p>
+                                Baterista del grupo desde los comienzos, amigo de la secundaria de
+                                Dárgelos, Panza aporta el pulso rítmico que sostiene las canciones,
+                                desde los momentos más pesados de los primeros discos hasta las
+                                baladas pop más recientes.
+                            </p>
+                            <p>
+                                Sus influencias cruzan rock argentino, clásicos internacionales y
+                                una gran curiosidad por los ritmos híbridos. Esa mezcla le permitió
+                                adaptarse a cada “temporada” babasónica: del rock psicodélico al
+                                pop elegante, sin perder identidad.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ROGER -->
+                <article id="roger" class="mb-5 pb-4 border-bottom">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-4">
+                            <img src="../img/ellos/ellos-roger.jpg" alt="Mariano Roger Domínguez"
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="h3">Mariano “Roger” Domínguez</h2>
+                            <p>
+                                Guitarrista de la banda y una de sus voces internas más informadas,
+                                Roger se sumó a Babasónicos luego de tocar en otros proyectos y
+                                explorar música para cine y televisión.
+                            </p>
+                            <p>
+                                Sus guitarras pueden ir de riffs muy directos a climas más
+                                ambientales. También compone y arregla, aportando siempre ideas
+                                melódicas que terminan de definir muchas canciones clave del grupo.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TUTA -->
+                <article id="tuta" class="mb-5 pb-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-4 order-md-2">
+                            <img src="../img/ellos/ellos-tuta.jpg" alt="Gustavo Tuta Torres"
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-8 order-md-1">
+                            <h2 class="h3">Gustavo “Tuta” Torres</h2>
+                            <p>
+                                Bajista que llegó al grupo después de haber tocado con
+                                otras bandas dentro de la escena del rock argentino.
+                            </p>
+                            <p>
+                                Su incorporación ayudó a consolidar una base rítmica firme y
+                                flexible a la vez, algo fundamental para las etapas donde
+                                Babasónicos combinó grooves bailables con arreglos más
+                                elaborados y sofisticados.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+
+        <!-- LINK VOLVER ARRIBA -->
+        <div class="text-center mt-4">
+            <a href="#top" class="btn btn-outline-secondary btn-sm">Volver arriba</a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container text-center">
+            <small>Informática General 1 – Sitio sobre Babasónicos – Kiara Stancatti</small>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+</body>
+</html>

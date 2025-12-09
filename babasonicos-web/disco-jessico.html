@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessico – Babasónicos</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Babasónicos</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- LA BANDA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="banda.html" id="navbarBanda" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            La banda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarBanda">
+                            <li><a class="dropdown-item" href="banda.html">Presentación</a></li>
+                            <li><a class="dropdown-item" href="historia.html">Historia en los 90</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INTEGRANTES -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="integrantes.html" id="navbarIntegrantes"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Integrantes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarIntegrantes">
+                            <li><a class="dropdown-item" href="integrantes.html">Integrantes actuales</a></li>
+                            <li><a class="dropdown-item" href="detalle-integrantes.html">Uno x uno</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- DISCOGRAFIA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page"
+                           href="discografia.html" id="navbarDiscografia"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Discografía
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="discografia.html">Visión general</a></li>
+                            <li><a class="dropdown-item active" aria-current="page" href="disco-jessico.html">Jessico</a></li>
+                            <li><a class="dropdown-item" href="disco-infame.html">Infame</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ESTETICA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="estetica.html" role="button"
+                           data-bs-toggle="dropdown">
+                            Estética & moda
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="estetica.html">Concepto estético</a></li>
+                            <li><a class="dropdown-item" href="moda.html">Moda en el escenario</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- VIVO -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="vivo.html" role="button"
+                           data-bs-toggle="dropdown">
+                            En vivo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="vivo.html">Shows destacados</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- JUEGO -->
+                    <li class="nav-item"><a class="nav-link" href="juego.html">Juego</a></li>
+
+                    <!-- COMPLEMENTARIAS -->
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="alumna.html">Sobre la alumna</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main class="container my-5">
+
+        <!-- CABECERA -->
+        <header class="mb-5 text-center">
+            <h1 class="mb-3">Jessico</h1>
+            <p class="lead">
+                El disco consagratorio y unánime con el que Babasónicos logra la masividad
+                sin dejar de ser Babasónicos.
+            </p>
+            <p class="text-muted mb-0">Editado en julio de 2001.</p>
+        </header>
+
+        <div class="row g-4">
+
+            <!-- COLUMNA IZQUIERDA: PORTADA + FICHA -->
+            <aside class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <img src="../img/discos/jessico.jpg" class="card-img-top" alt="Portada del disco Jessico">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Ficha técnica</h2>
+                        <ul class="list-unstyled small mb-0">
+                            <li><strong>Artista:</strong> Babasónicos</li>
+                            <li><strong>Título:</strong> Jessico</li>
+                            <li><strong>Año:</strong> 2001</li>
+                            <li><strong>Sello:</strong> Universal / Pop Art (según edición)</li>
+                            <li><strong>Producción:</strong> Babasónicos &amp; Andrew Weiss</li>
+                            <li><strong>Género:</strong> Rock / Pop alternativo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h6 text-uppercase text-muted">Claves para escuchar Jessico</h2>
+                        <ul class="small mb-0">
+                            <li>Canciones directas, melodías muy claras.</li>
+                            <li>Sonido más limpio que en los discos 90s.</li>
+                            <li>Letras llenas de ironía y frases memorables.</li>
+                            <li>Equilibrio raro entre hit radial y rareza babasónica.</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- COLUMNA DERECHA: TEXTO PRINCIPAL -->
+            <section class="col-lg-8">
+
+                <article class="mb-4">
+                    <h2 class="h4">Un punto de inflexión</h2>
+                    <p>
+                        Después del recorrido pesado y barroco de <em>Babasónica</em> y de la
+                        coctelera desbordada de <em>Miami</em>, Jessico aparece como la
+                        versión destilada de todo lo que la banda venía probando desde
+                        principios de los 90. 
+                    </p>
+                    <p>
+                        El propio texto de la revista subraya esa idea: los “desfachatados”
+                        lo hacen de nuevo, pero esta vez el resultado es un disco que parece
+                        sencillo en la superficie y, al mismo tiempo, está cargado de
+                        decisiones de producción y de escritura muy precisas.
+                    </p>
+                    <p>
+                        Jessico es un álbum frontal, radiante y encantador como su nombre,
+                        que consigue algo difícil: sonar cercano para un público mucho más
+                        amplio sin diluir la rareza babasónica. Es pop, pero un pop que
+                        todavía juega con el absurdo, el doble sentido y la ironía.
+                    </p>
+                </article>
+
+                <article class="mb-4">
+                    <h2 class="h4">Sonido y producción</h2>
+                    <p>
+                        A diferencia de los discos anteriores, el sonido de la banda aquí
+                        no está recargado de arreglos: las guitarras y los sintetizadores
+                        aparecen más limpios, las bases rítmicas son más claras y cada
+                        instrumento ocupa un lugar bastante definido.
+                    </p>
+                    <p>
+                        La sensación que transmite la revista es que Babasónicos encontró
+                        con Jessico “el camino más rápido” hacia las canciones, sin
+                        sacrificar complejidad. Hay menos capas caóticas y más claridad
+                        en las estructuras: estrofa, estribillo, puente, todo al servicio
+                        de una melodía que se queda dando vueltas en la cabeza.
+                    </p>
+                    <p>
+                        Al mismo tiempo, el grupo sigue trabajando con el productor
+                        Andrew Weiss, lo que asegura un pie todavía apoyado en la
+                        tradición alternativa: grabación cuidada, bajos presentes y
+                        una mezcla que conserva cierta aspereza.
+                    </p>
+                </article>
+
+                <article class="mb-4">
+                    <h2 class="h4">Letras, personajes y clima</h2>
+                    <p>
+                        Las letras de Jessico están llenas de personajes extraños,
+                        frases que se quedaron fijadas en el imaginario pop argentino
+                        y una forma particular de hablar del deseo, la noche y la
+                        desilusión.
+                    </p>
+                    <p>
+                        El disco navega entre la celebración y la amenaza:
+                        se pueden escuchar declaraciones de amor torcidas,
+                        pequeñas venganzas, confesiones íntimas dichas con
+                        una sonrisa y escenas que rozan lo absurdo pero
+                        terminan siendo muy reconocibles.
+                    </p>
+                    <p>
+                        En la reseña de la revista se insiste en que el grupo
+                        logra, a través del humor y la provocación, tocar temas
+                        bastante oscuros sin perder la ligereza. Jessico es,
+                        en ese sentido, un equilibrio raro entre fiesta
+                        pop y comentario crítico.
+                    </p>
+                </article>
+
+                <!-- “TRACKLIST” SIMPLE -->
+                <section class="mb-4">
+                    <h2 class="h4">Canciones destacadas</h2>
+                    <p class="small text-muted">
+                        Lista de temas a modo orientativo, pensada para acompañar la
+                        lectura (no necesariamente completa ni en el orden exacto del CD).
+                    </p>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                        <div class="col">
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">• Los calientes</li>
+                                <li class="list-group-item">• El loco</li>
+                                <li class="list-group-item">• Deléctrico</li>
+                                <li class="list-group-item">• La fox</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">• Rubí</li>
+                                <li class="list-group-item">• Suturno</li>
+                                <li class="list-group-item">• Carnavalera</li>
+                                <li class="list-group-item">• Camarín</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CIERRE -->
+                <section class="mb-4">
+                    <h2 class="h4">Por qué Jessico sigue importando</h2>
+                    <p>
+                        En la historia del grupo, Jessico suele ser leído como
+                        el momento en que Babasónicos consigue hablarle a mucha
+                        más gente sin perder el filo. La revista lo describe
+                        como un disco “grasún, gracioso y encantador”, que
+                        garantiza a la banda un acceso definitivo a un público
+                        masivo.
+                    </p>
+                    <p>
+                        Mirado desde hoy, funciona también como puerta de
+                        entrada perfecta para quien nunca escuchó a la banda:
+                        es lo suficientemente amigable para engancharse rápido,
+                        pero deja ver, detrás, toda la década de experimentos
+                        que lo hizo posible.
+                    </p>
+                </section>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container text-center">
+            <small>Informática General 1 – Sitio sobre Babasónicos – Kiara Stancatti</small>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+</body>
+</html>
