@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             const selectedFilter = this.getAttribute("data-filter");
 
-            // cambiar botón activo visualmente
+            // cambia botón activo visualmente
             filterButtons.forEach(function (btn) {
                 btn.classList.remove("active");
             });
             this.classList.add("active");
 
-            // aplicar filtro
+            // aplica filtro
             applyFilter(selectedFilter);
         });
     });

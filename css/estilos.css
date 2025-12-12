@@ -51,6 +51,29 @@
     cursor: default;
 }
 
+/* aviso rotar pantalla en el juego */
+#aviso-rotar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    z-index: 9999;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* solo aparece en celus en vertical */
+@media (max-width: 768px) and (orientation: portrait) {
+    #aviso-rotar {
+        display: flex;
+    }
+}
+
+
 /* Responsiv 3 columnas en celu */
 @media (max-width: 576px) {
     #tablero-juego {
@@ -58,3 +81,4 @@
         max-width: 100%;
     }
 }
+
