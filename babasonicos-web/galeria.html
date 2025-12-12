@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BABASÓNICOS - Galería</title>
+        <!-- bootstrap css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Babasónicos</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- LA BANDA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="banda.html" id="navbarBanda" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            La banda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarBanda">
+                            <li><a class="dropdown-item" href="banda.html">Presentación</a></li>
+                            <li><a class="dropdown-item" href="historia.html">Historia en los 90</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- INTEGRANTES -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="integrantes.html" id="navbarIntegrantes"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Integrantes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarIntegrantes">
+                            <li><a class="dropdown-item" href="integrantes.html">Integrantes actuales</a></li>
+                            <li><a class="dropdown-item" href="detalle-integrantes.html">Uno x uno</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- DISCOGRAFIA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="discografia.html" id="navbarDiscografia"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Discografía
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDiscografia">
+                            <li><a class="dropdown-item" href="discografia.html">Visión general</a></li>
+                            <li><a class="dropdown-item" href="disco-jessico.html">Jessico</a></li>
+                            <li><a class="dropdown-item" href="disco-infame.html">Infame</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ESTETICA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="estetica.html" id="navbarEstetica"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Estética &amp; moda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarEstetica">
+                            <li><a class="dropdown-item" href="estetica.html">Concepto estético</a></li>
+                            <li><a class="dropdown-item" href="moda.html">Moda en el escenario</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- EN VIVO -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="vivo.html" id="navbarVivo"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            En vivo
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarVivo">
+                            <li><a class="dropdown-item" href="vivo.html">Shows destacados</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- JUEGO -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="juego.html">Juego</a>
+                    </li>
+
+                    <!-- COMPLEMENTARIAS -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alumna.html">Sobre la alumna</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main class="container my-4">
+
+        
+        <section class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="mb-3">Galería de Babasónicos</h1>
+                <p class="lead">
+                    Una selección de imágenes de la banda: shows en vivo, integrantes y tapas de discos.
+                    Usá los botones para filtrar por categoría.
+                </p>
+            </div>
+        </section>
+
+        <!-- BTNES DE FILTRO -->
+        <section class="row mb-4">
+            <div class="col-12 text-center">
+                <div class="btn-group" role="group" aria-label="Filtros de galería">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="todos">Todos</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="shows">Shows</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="ellos">Integrantes</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="discos">Discos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRID DE IMAGENES -->
+        <section class="row g-4" id="galeria-grid">
+
+            <!-- SHOWS -->
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="shows">
+                <div class="card h-100">
+                    <img src="../img/shows/la-decada-sonica.jpg" class="card-img-top" alt="Show La década sónica">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Show “La década sónica”.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="shows">
+                <div class="card h-100">
+                    <img src="../img/shows/colon.jpg" class="card-img-top" alt="Babasónicos en el Colón">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Presentación en el Teatro Colón.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="shows">
+                <div class="card h-100">
+                    <img src="../img/shows/infames.jpg" class="card-img-top" alt="Gira Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Gira de la época de “Infame”.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="shows">
+                <div class="card h-100">
+                    <img src="../img/shows/escenario.jpg" class="card-img-top" alt="Gira Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Babasónicos en escena.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="shows">
+                <div class="card h-100">
+                    <img src="../img/shows/movistar.jpg" class="card-img-top" alt="Gira Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Babasónicos en el Movistar Arena.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="shows">
+                <div class="card h-100">
+                    <img src="../img/shows/babashow.jpg" class="card-img-top" alt="Gira Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Babasónicos en el Movistar Arena.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="shows">
+                <div class="card h-100">
+                    <img src="../img/shows/mimos.jpg" class="card-img-top" alt="Gira Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Presentación de "Mimos son mimos".</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ELLOS -->
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/shows/irresponsables-2.jpg" class="card-img-top" alt="Adrián Dárgelos">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Adrián Dárgelos en primer plano.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/ellos/panza.jpg" class="card-img-top" alt="Panza">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Panza, batería histórica de la banda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/ellos/moda2.jpg" class="card-img-top" alt="Foto grupal Babasónicos">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Foto grupal de Babasónicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/shows/infames-2.jpg" class="card-img-top" alt="Foto grupal Babasónicos">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Foto grupal de Babasónicos.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/ellos/rogerydargelos.jpg" class="card-img-top" alt="Foto grupal Babasónicos">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Roger y Dárgelos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/ellos/umagaleria.jpg" class="card-img-top" alt="Foto grupal Babasónicos">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Diego "Uma" Rodriguez.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/ellos/umatgaleria.jpg" class="card-img-top" alt="Foto grupal Babasónicos">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Diego “Uma-T” Tuñón.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="ellos">
+                <div class="card h-100">
+                    <img src="../img/ellos/tutagaleria.jpg" class="card-img-top" alt="Foto grupal Babasónicos">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">Diego “Uma-T” Tuñón.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DISCOS -->
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="discos">
+                <div class="card h-100">
+                    <img src="../img/discos/pasto.jpg" class="card-img-top" alt="Pasto">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">“Pasto”, debut de 1992.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="discos">
+                <div class="card h-100">
+                    <img src="../img/discos/jessico.jpg" class="card-img-top" alt="Jessico">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">“Jessico”, el disco consagratorio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="discos">
+                <div class="card h-100">
+                    <img src="../img/discos/infame.jpg" class="card-img-top" alt="Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">“Infame”, continuación de la era Jessico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="discos">
+                <div class="card h-100">
+                    <img src="../img/discos/miami.jpg" class="card-img-top" alt="Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">“Miami”.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="discos">
+                <div class="card h-100">
+                    <img src="../img/discos/mucho.jpg" class="card-img-top" alt="Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">“Mucho”.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 galeria-item" data-category="discos">
+                <div class="card h-100">
+                    <img src="../img/discos/romantisismico.jpg" class="card-img-top" alt="Infame">
+                    <div class="card-body">
+                        <p class="card-text small mb-0">“Romantisísmico”.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container text-center">
+            <small>
+                Informática General 1 – Sitio sobre Babasónicos – Desarrollado por Kiara Stancatti
+            </small>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-7CqB8f5dyFwchAuC8W9jAq56k97X3CJidb8sRP/6IDdnh3oX1N1pAVccahJgN9ze" crossorigin="anonymous"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>
