@@ -66,6 +66,11 @@
     justify-content: center;
 }
 
+/* centrado del index */
+body.principal main {
+    text-align: center;
+}
+
 /* solo aparece en celus en vertical */
 @media (max-width: 768px) and (orientation: portrait) {
     #aviso-rotar {

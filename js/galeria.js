@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     // botones de filtro
+    //busca el boton con data-filter
     const filterButtons = document.querySelectorAll("button[data-filter]");
-    // items de la galería
+    //busca items de la galería
     const galleryItems = document.querySelectorAll(".galeria-item");
 
     // función para aplicar filtro
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (filter === "todos" || category === filter) {
                 // mostrar
-                item.classList.remove("d-none");
+                item.classList.remove("d-none"); //d-none es clase de bootstrap para ocultar
             } else {
                 // ocultar
                 item.classList.add("d-none");
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // cambia botón activo visualmente
             filterButtons.forEach(function (btn) {
-                btn.classList.remove("active");
+                btn.classList.remove("active"); //active es clase de bootstrap, cambia el color y marca el btn seleccionado
             });
             this.classList.add("active");
 

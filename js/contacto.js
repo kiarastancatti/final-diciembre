@@ -1,60 +1,60 @@
+//espera a q todo el html este cargado para ejecutar el js
 document.addEventListener("DOMContentLoaded", function () {
+    //formulario
     const form = document.getElementById("form-contacto");
 
+    //tomo los id del ofrmulario
     const inputNombre = document.getElementById("nombre");
     const inputEmail = document.getElementById("email");
     const inputTelefono = document.getElementById("telefono");
     const inputMensaje = document.getElementById("mensaje");
 
-    //mail al q se envia el correo
-    const destinatario = "carastancat@gmail.com";
-
     // expresiones regulares
     const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,20}$/;
     const regexTelefono = /^[0-9]{10}$/;
 
-    //clase de bootstrap isvalid pinta de verde el campo
+    // con bootstrap se pinta de verde si el campo es valido
+    //parametro "el" es elemento html (imputnombre, imputemail, imputtelefono)
     function setValid(el) {
         el.classList.add("is-valid");
         el.classList.remove("is-invalid");
     }
 
-    //pinta de rojo el campo
+    //  con bootstrap se pinta de rojo si el campo es valido
     function setInvalid(el) {
         el.classList.add("is-invalid");
         el.classList.remove("is-valid");
     }
 
-    //borra estado visual, verde o rojo
+    // borra el estado visual
     function clearState(el) {
         el.classList.remove("is-valid");
         el.classList.remove("is-invalid");
     }
 
-    //validacion del formulario
-    //devuelven true o false y tambien actualizan el estado visual
+    // valida el nombre
     function validarNombre() {
-
-        //lee el valor y saca espacios al principio y al final
         const valor = inputNombre.value.trim();
-
-        //si esta vacio limpia el estado y devuelve false
+        //si esta vacio no marca error
         if (valor === "") { clearState(inputNombre); return false; }
-
-        //si pasa la validacion, verde true y si no la pasa rojo false
+        //si cumple la expresion regular es valido
         if (regexNombre.test(valor)) { setValid(inputNombre); return true; }
+        //si no cumple es invalido
         setInvalid(inputNombre); return false;
     }
 
+    //valida el email
     function validarEmail() {
         const valor = inputEmail.value.trim();
         if (valor === "") { clearState(inputEmail); return false; }
-        
+
+        //validacion simple del email
         const ok = valor.includes("@") && valor.includes(".") && valor.indexOf("@") > 0;
         if (ok) { setValid(inputEmail); return true; }
         setInvalid(inputEmail); return false;
     }
 
+    //valida el telefono
     function validarTelefono() {
         const valor = inputTelefono.value.trim();
         if (valor === "") { clearState(inputTelefono); return false; }
@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setInvalid(inputTelefono); return false;
     }
 
+    //valida q el mensaje no este vacio
     function validarMensaje() {
         const valor = inputMensaje.value.trim();
         if (valor === "") { setInvalid(inputMensaje); return false; }
@@ -69,52 +70,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // validación en vivo
-    //cada vez que se escribe algo, chekea si esta bien o mal y lo pinta de verde o de rojo
     inputNombre.addEventListener("input", validarNombre);
     inputEmail.addEventListener("input", validarEmail);
     inputTelefono.addEventListener("input", validarTelefono);
-    
-    //validacion del mensaje
-    //si esta vacio no se pinta de rojo
-    //si tiene contenido lo valida normalmente
+
+    //si el mensaje esta vacio no se pinta de rojo
     inputMensaje.addEventListener("input", function () {
-        
         const valor = inputMensaje.value.trim();
         if (valor === "") { clearState(inputMensaje); return; }
         validarMensaje();
     });
 
-    // al enviar, valida todo y si está ok, arma el mail
+    // al mandanr el formulario
     form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        //valida todo junto
+        //valida todos los campor
         const okNombre = validarNombre();
         const okEmail = validarEmail();
         const okTelefono = validarTelefono();
         const okMensaje = validarMensaje();
 
-        //si alguno es false, se ven los rojos
+        //si alguno falla frena el envio
         if (!(okNombre && okEmail && okTelefono && okMensaje)) {
-            return; 
+            e.preventDefault(); // evita q se mande a formspree
         }
-
-        //si todo esta ok, recupera los valores 
-        const nombre = inputNombre.value.trim();
-        const email = inputEmail.value.trim();
-        const telefono = inputTelefono.value.trim();
-        const mensaje = inputMensaje.value.trim();
-
-        const asunto = "Contacto desde sitio Babasónicos";
-        const cuerpo = `Nombre: ${nombre}\nEmail: ${email}\nTeléfono: ${telefono}\n\nMensaje:\n${mensaje}`;
-
-        //amrma el link de mailto con subjet y body
-        //encodeURIComponent sirve por si hay espacios, acentos, etc. no rompe la url
-        const mailtoLink =
-            `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
-
-            //redirige el navegador a mailto
-        window.location.href = mailtoLink;
+        // si todo está ok no usa preventDefault y el form se envía a Formspree
     });
 });
 
