@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BABASÓNICOS - Página principal </title>
         <!--bootstrap css-->
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"crossorigin="anonymous">
-         <link rel="stylesheet" href="../css/estilos.css">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+         <link rel="stylesheet" href="./css/estilos.css">
     </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -93,63 +93,28 @@
         </div>
     </nav>
 
+    
     <main class="container my-5">
 
-    <h1 class="text-center mb-4">Contacto</h1>
+        <!--INSTRUCCIONES-->
+        <section class="text-center mb-3">
+            <h1 class="mb-2">Memotest Babasónico</h1>
+            <p class="lead mb-0">
+                Encontrá todas las parejas de tapas de discos.
+                <br>
+            </p>
+        </section>
 
-    <form
-      id="form-contacto"
-      action="https://formspree.io/f/xrbnjyva"
-      method="POST"
-      novalidate>
+        <!-- TABLERO -->
+        <div id="tablero-juego"></div>
 
-
-        <!-- NOMBRE -->
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre *</label>
-            <input type="text" id="nombre" name="nombre" class="form-control">
-            <div class="invalid-feedback">
-                El nombre debe tener solo letras y hasta 20 caracteres.
-            </div>
+        <div id="aviso-rotar">
+            <p>Para una mejor experiencia, rotá el celular</p>
         </div>
 
-        <!-- MAIL -->
-        <div class="mb-3">
-            <label for="email" class="form-label">Email *</label>
-            <input type="email" id="email" name="email" class="form-control">
-            <div class="invalid-feedback">
-                Ingresá un email válido.
-            </div>
-        </div>
+    </main>
 
-        <!-- TEL -->
-        <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono *</label>
-            <input type="text" id="telefono" name="telefono" name="telefono" class="form-control">
-            <div class="invalid-feedback">
-                El teléfono debe contener exactamente 10 números.
-            </div>
-        </div>
 
-        <!-- MENSAJE -->
-        <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje *</label>
-            <textarea id="mensaje" name="mensaje" class="form-control" rows="4"></textarea>
-            <div class="invalid-feedback">
-                El mensaje no puede estar vacío.
-            </div>
-        </div>
-
-        <!-- BOTON -->
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">
-                Enviar mensaje
-            </button>
-        </div>
-
-    </form>
-
-</main>
 
     
     <footer class="bg-dark text-light py-4 mt-auto">
@@ -165,9 +130,11 @@
          </div>
     </footer>
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="../js/contacto.js"></script>
+
+    <script src="./js/juego.js"></script>
 
 
 </body>

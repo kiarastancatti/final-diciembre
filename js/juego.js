@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // dorso
         const imgDorso = document.createElement("img");
-        imgDorso.src = "../img/discos/dorso.jpg";
+        imgDorso.src = "img/discos/dorso.jpg";
         imgDorso.alt = "Dorso";
         imgDorso.classList.add("dorso");
 
         // frente
         const imgFrente = document.createElement("img");
-        imgFrente.src = "../img/discos/" + nombreArchivo;
+        imgFrente.src = "img/discos/" + nombreArchivo;
         imgFrente.alt = "Tapa " + nombreArchivo.replace(".jpg", "");
         imgFrente.classList.add("frente");
 

@@ -1,4 +1,4 @@
-              <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
@@ -6,7 +6,7 @@
         <title>BABASÓNICOS - Página principal </title>
         <!--bootstrap css-->
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"crossorigin="anonymous">
-         <link rel="stylesheet" href="../css/estilos.css">
+         <link rel="stylesheet" href="./css/estilos.css">
     </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -93,73 +93,63 @@
         </div>
     </nav>
 
-
     <main class="container my-5">
 
-    
-    <section class="text-center mb-4">
-      <h1 class="mb-2">Hola! Soy Kiara Stancatti</h1>
-      <p class="lead mb-0">
-        Estudio Artes Multimediales en la Universidad Nacional de las Artes y estoy muy a gusto con los contenidos de la carrera.
-      </p>
-    </section>
+    <h1 class="text-center mb-4">Contacto</h1>
 
-    <section class="row justify-content-center">
-      <div class="col-lg-9">
+    <form
+      id="form-contacto"
+      action="https://formspree.io/f/xrbnjyva"
+      method="POST"
+      novalidate>
 
-        <div class="card shadow-sm border-0">
-          <div class="card-body p-4 p-md-5">
 
-            
-            <div class="p-3 rounded bg-light border mb-4">
-              <p class="mb-0">
-                Pasé por varias carreras universitarias antes de encontrar esta y siento que fue fructífero el paso por diferentes universidades.
-                Creo que esta es la carrera definitiva y eso me pone muy contenta.
-              </p>
+        <!-- NOMBRE -->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" class="form-control">
+            <div class="invalid-feedback">
+                El nombre debe tener solo letras y hasta 20 caracteres.
             </div>
-
-            
-            <h2 class="h5 mb-2">Mi recorrido</h2>
-            <p>
-              Nunca me imaginé programando y aquí estoy, haciendo una página web utilizando GitHub.
-              Ahora les cuento un poco sobre mí.
-            </p>
-
-            <h3 class="h6 text-uppercase text-muted mt-4">De San Martín de los Andes a Buenos Aires</h3>
-            <p>
-              Realicé mis estudios primarios y secundarios en el pueblo en el que nací y fui criada: San Martín de los Andes, en Neuquén.
-              Allí pasé por dos colegios secundarios: primero por la EPET 12, una escuela técnica, donde realicé la carrera secundaria de
-              Maestro Mayor de Obras. En el último año me cambié a un Bachiller Contable para poder terminar de manera más veloz el secundario
-              y poder mudarme a Buenos Aires. Siempre me hizo ilusión el hecho de mudarme a la ciudad.
-            </p>
-
-            <h3 class="h6 text-uppercase text-muted mt-4">UBA: Diseño de Imagen y Sonido</h3>
-            <p>
-              Ya viviendo aquí, comencé el CBC para la carrera de Diseño de Imagen y Sonido en la UBA.
-              Me fue muy bien y estaba muy a gusto con las materias y la cursada, excepto por matemática…
-              Esa materia fue la causante de mi cambio de carrera.
-            </p>
-
-            <h3 class="h6 text-uppercase text-muted mt-4">UNA: Curaduría de Artes</h3>
-            <p>
-              Comencé entonces, luego de 2 años de CBC, la carrera de Curaduría de Artes en la UNA.
-              Me pareció buena idea, incluso me gustaban las cosas que aprendía ahí, pero de todas formas entendí que es una carrera
-              un poco solemne para esta altura de mi vida.
-            </p>
-
-            <h3 class="h6 text-uppercase text-muted mt-4">Artes Multimediales</h3>
-            <p class="mb-0">
-              Desde ese entonces comencé la búsqueda de una carrera que se acople más a mis deseos de este momento y encontré esta:
-              multifacética y artística, con muchas actividades prácticas. Y acá estoy, en mi primer año de cursada, emocionada.
-            </p>
-
-          </div>
         </div>
 
-      </div>
-    </section>
+        <!-- MAIL -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" id="email" name="email" class="form-control">
+            <div class="invalid-feedback">
+                Ingresá un email válido.
+            </div>
+        </div>
 
-  </main>
+        <!-- TEL -->
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono *</label>
+            <input type="text" id="telefono" name="telefono" name="telefono" class="form-control">
+            <div class="invalid-feedback">
+                El teléfono debe contener exactamente 10 números.
+            </div>
+        </div>
+
+        <!-- MENSAJE -->
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" class="form-control" rows="4"></textarea>
+            <div class="invalid-feedback">
+                El mensaje no puede estar vacío.
+            </div>
+        </div>
+
+        <!-- BOTON -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">
+                Enviar mensaje
+            </button>
+        </div>
+
+    </form>
+
+</main>
 
     
     <footer class="bg-dark text-light py-4 mt-auto">
@@ -177,8 +167,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-
+    <script src="./js/contacto.js"></script>
 
 
 </body>
 </html>
+
+
+
